@@ -1,0 +1,22 @@
+PROGRAM INTEGRAL
+
+  REAL(8) T(10000),F(10000),RINT,H
+  INTEGER I,J
+
+  OPEN(1,FILE='DESPLAZAMIENTO',STATUS='old')
+ 
+  I=1
+  DO    
+     READ(1,*,ERR=30)T(I),Fx(I),fy(I),rm(I)
+     I=I+1
+  END DO
+  CLOSE(1)
+
+  RINT=0.D0
+  100 DO J=1,I-1
+     H=T(J+1)-T(J)
+     RINT=RINT+H*(F(J+1)+Fy(J))/2.D0
+  END DO
+  WRITE(*,*) RINT
+
+END PROGRAM INTEGRAL
