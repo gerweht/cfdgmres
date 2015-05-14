@@ -28,7 +28,7 @@ contains
     REAL*8 :: lambda, mu, T_avg 
     REAL*8, dimension(2:4) :: K1jUj
     REAL*8, dimension(2:4) :: K2jUj
-    !%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+    !%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%  agussssss
     !$OMP PARALLEL DO DEFAULT(PRIVATE) &
     !$OMP SHARED(rhs, U, theta, dNx, dNy, area, shoc, dtl, &
     !$OMP t_sugn1, t_sugn2, t_sugn3, inpoel, nelem, npoin, &
